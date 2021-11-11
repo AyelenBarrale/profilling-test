@@ -1,0 +1,699 @@
+Statistical profiling result from con-logger.log, (18031 ticks, 60 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+    704    3.9%          /usr/lib/system/libsystem_malloc.dylib
+    190    1.1%          /usr/lib/libc++.1.dylib
+    172    1.0%          /usr/lib/system/libsystem_platform.dylib
+    129    0.7%          /usr/lib/system/libsystem_pthread.dylib
+     66    0.4%          /usr/lib/system/libsystem_c.dylib
+     41    0.2%          /usr/lib/libc++abi.dylib
+     16    0.1%          /usr/lib/system/libdyld.dylib
+     13    0.1%          /usr/lib/system/libsystem_kernel.dylib
+      6    0.0%          /usr/lib/system/libsystem_m.dylib
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+     35    0.2%    0.2%  LazyCompile: *deserializeObject /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/parser/deserializer.js:54:27
+     29    0.2%    0.2%  LazyCompile: *next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:176:16
+     14    0.1%    0.1%  LazyCompile: *emit node:events:340:44
+     12    0.1%    0.1%  LazyCompile: *formatRaw node:internal/util/inspect:796:19
+     11    0.1%    0.1%  LazyCompile: *resolve node:path:1091:10
+     10    0.1%    0.1%  RegExp: \u001b\[\d\d?m
+     10    0.1%    0.1%  LazyCompile: *normalizeString node:path:66:25
+     10    0.1%    0.1%  LazyCompile: *nextTick node:internal/process/task_queues:104:18
+      9    0.0%    0.1%  LazyCompile: *processTicksAndRejections node:internal/process/task_queues:68:35
+      7    0.0%    0.0%  Function: ^afterWriteDispatched node:internal/stream_base_commons:159:30
+      6    0.0%    0.0%  LazyCompile: *onwrite node:internal/streams/writable:425:17
+      6    0.0%    0.0%  LazyCompile: *handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:136:31
+      5    0.0%    0.0%  LazyCompile: *toString node:buffer:782:46
+      5    0.0%    0.0%  LazyCompile: *Module._nodeModulePaths node:internal/modules/cjs/loader:629:37
+      5    0.0%    0.0%  Function: ^setHeader node:_http_outgoing:574:57
+      5    0.0%    0.0%  Function: ^renderInfo file:///Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/src/controllers/info.controller.js:8:33
+      4    0.0%    0.0%  RegExp: ^((?:(?:[0-9a-fA-F]{1,4}):){7}(?:(?:[0-9a-fA-F]{1,4})|:)|(?:(?:[0-9a-fA-F]{1,4}):){6}(?:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|:(?:[0-9a-fA-F]{1,4})|:)|(?:(?:[0-9a-fA-F]{1,4}):){5}(?::((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,2}|:)|(?:(?:[0-9a-fA-F]{1,4}):){4}(?:(:(?:[0-9a-fA-F]{1,4})){0,1}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,3}|:)|(?:(?:[0-9a-fA-F]{1,4}):){3}(?:(:(?:[0-9a-fA-F]{1,4})){0,2}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,4}|:)|(?:(?:[0-9a-fA-F]{1,4}):){2}(?:(:(?:[0-9a-fA-F]{1,4})){0,3}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,5}|:)|(?:(?:[0-9a-fA-F]{1,4}):){1}(?:(:(?:[0-9a-fA-F]{1,4})){0,4}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(:(?:[0-9a-fA-F]{1,4})){1,6}|:)|(?::((?::(?:[0-9a-fA-F]{1,4})){0,5}:((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])|(?::(?:[0-9a-fA-F]{1,4})){1,7}|:)))(%[0-9a-zA-Z-.:]{1,})?$
+      4    0.0%    0.0%  RegExp: [^\t\x20-\x7e\x80-\xff]
+      4    0.0%    0.0%  LazyCompile: *serializeInto /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/parser/serializer.js:550:23
+      4    0.0%    0.0%  LazyCompile: *reduceToSingleString node:internal/util/inspect:1764:30
+      4    0.0%    0.0%  LazyCompile: *formatProperty node:internal/util/inspect:1672:24
+      4    0.0%    0.0%  LazyCompile: *formatPrimitive node:internal/util/inspect:1382:25
+      4    0.0%    0.0%  Function: ^emit node:events:340:44
+      4    0.0%    0.0%  Function: ^Writable.write node:internal/streams/writable:333:36
+      4    0.0%    0.0%  Function: ^Readable.read node:internal/streams/readable:394:35
+      3    0.0%    0.0%  RegExp: ^\s*([^;\s]*)(?:;|\s|$)
+      3    0.0%    0.0%  RegExp: ^[\^_`a-zA-Z\-0-9!#$%&'*+.|~]+$
+      3    0.0%    0.0%  RegExp: [\x00-\x1f\x27\x5c\x7f-\x9f]
+      3    0.0%    0.0%  RegExp: ;\s*charset\s*=
+      3    0.0%    0.0%  LazyCompile: *setWriteHeadHeaders /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/on-headers/index.js:105:30
+      3    0.0%    0.0%  LazyCompile: *remove node:internal/linkedlist:15:16
+      3    0.0%    0.0%  LazyCompile: *_write node:internal/streams/writable:283:16
+      3    0.0%    0.0%  LazyCompile: *_storeHeader node:_http_outgoing:374:22
+      3    0.0%    0.0%  LazyCompile: *_copyActual node:buffer:242:21
+      3    0.0%    0.0%  LazyCompile: *Long.negate /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/long.js:612:38
+      3    0.0%    0.0%  Function: ^writevGeneric node:internal/stream_base_commons:126:23
+      3    0.0%    0.0%  Function: ^value node:internal/console/constructor:320:20
+      3    0.0%    0.0%  Function: ^value node:internal/console/constructor:257:20
+      3    0.0%    0.0%  Function: ^onwrite node:internal/streams/writable:425:17
+      3    0.0%    0.0%  Function: ^onStreamRead node:internal/stream_base_commons:171:22
+      3    0.0%    0.0%  Function: ^getMethodToken /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/morgan/index.js:220:48
+      3    0.0%    0.0%  Function: ^endReadableNT node:internal/streams/readable:1336:23
+      3    0.0%    0.0%  Function: ^end /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express-session/index.js:250:27
+      3    0.0%    0.0%  Function: ^doWrite node:internal/streams/writable:398:17
+      3    0.0%    0.0%  Function: ^compileFunction node:vm:308:25
+      3    0.0%    0.0%  Function: ^_write node:internal/streams/writable:283:16
+      3    0.0%    0.0%  Function: ^EventEmitter.init node:events:194:29
+      3    0.0%    0.0%  Function: ^<anonymous> /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongodb/lib/operations/connect.js:61:28
+      2    0.0%    0.0%  RegExp: ^[a-zA-Z_][a-zA-Z_0-9]*$
+      2    0.0%    0.0%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+\/[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      2    0.0%    0.0%  LazyCompile: *send /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/response.js:107:25
+      2    0.0%    0.0%  LazyCompile: *realpathSync node:fs:2408:22
+      2    0.0%    0.0%  LazyCompile: *readableAddChunk node:internal/streams/readable:236:26
+      2    0.0%    0.0%  LazyCompile: *normalize node:path:1127:12
+      2    0.0%    0.0%  LazyCompile: *getEncodingOps node:buffer:678:24
+      2    0.0%    0.0%  LazyCompile: *concat node:buffer:535:32
+      2    0.0%    0.0%  LazyCompile: *addListener node:events:486:58
+      2    0.0%    0.0%  LazyCompile: *TopologyDescription /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology_description.js:28:16
+      2    0.0%    0.0%  LazyCompile: *Readable.removeListener node:internal/streams/readable:905:45
+      2    0.0%    0.0%  LazyCompile: *Readable.read node:internal/streams/readable:394:35
+      2    0.0%    0.0%  LazyCompile: *Readable.on node:internal/streams/readable:875:33
+      2    0.0%    0.0%  LazyCompile: *Module._findPath node:internal/modules/cjs/loader:494:28
+      2    0.0%    0.0%  LazyCompile: *Long.fromNumber /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/long.js:130:32
+      2    0.0%    0.0%  LazyCompile: *Long /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/long.js:58:18
+      2    0.0%    0.0%  Function: wasm-function[22]
+      2    0.0%    0.0%  Function: wasm-function[15]
+      2    0.0%    0.0%  Function: ^write_ node:_http_outgoing:730:16
+      2    0.0%    0.0%  Function: ^writeHead node:_http_server:269:19
+      2    0.0%    0.0%  Function: ^vary /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/vary/index.js:133:15
+      2    0.0%    0.0%  Function: ^update node:internal/crypto/hash:95:40
+      2    0.0%    0.0%  Function: ^update /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology_description.js:120:11
+      2    0.0%    0.0%  Function: ^strEscape node:internal/util/inspect:465:19
+      2    0.0%    0.0%  Function: ^sendFile /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/send/index.js:716:51
+      2    0.0%    0.0%  Function: ^readableAddChunk node:internal/streams/readable:236:26
+      2    0.0%    0.0%  Function: ^readDoubleForwards node:internal/buffer:559:28
+      2    0.0%    0.0%  Function: ^processIncomingData /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      2    0.0%    0.0%  Function: ^isModified /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express-session/index.js:425:24
+      2    0.0%    0.0%  Function: ^get node:internal/streams/writable:783:8
+      2    0.0%    0.0%  Function: ^get node:internal/streams/readable:1166:8
+      2    0.0%    0.0%  Function: ^get node:internal/streams/duplex:94:8
+      2    0.0%    0.0%  Function: ^get node:_http_incoming:108:16
+      2    0.0%    0.0%  Function: ^formatWithOptions node:internal/util/inspect:1883:27
+      2    0.0%    0.0%  Function: ^formatRaw node:internal/util/inspect:796:19
+      2    0.0%    0.0%  Function: ^emitReadable_ node:internal/streams/readable:574:23
+      2    0.0%    0.0%  Function: ^createError /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/http-errors/index.js:48:22
+      2    0.0%    0.0%  Function: ^compareTopologyVersion /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/sdam/server_description.js:184:32
+      2    0.0%    0.0%  Function: ^clearBuffer node:internal/streams/writable:529:21
+      2    0.0%    0.0%  Function: ^checkIsHttpToken node:_http_common:221:26
+      2    0.0%    0.0%  Function: ^append /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/vary/index.js:38:17
+      2    0.0%    0.0%  Function: ^afterWrite node:internal/streams/writable:487:20
+      2    0.0%    0.0%  Function: ^_destroy node:_http_incoming:176:55
+      2    0.0%    0.0%  Function: ^Socket._writeGeneric node:net:769:42
+      2    0.0%    0.0%  Function: ^Readable.resume node:internal/streams/readable:964:37
+      2    0.0%    0.0%  Function: ^Readable.push node:internal/streams/readable:227:35
+      2    0.0%    0.0%  Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      2    0.0%    0.0%  Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+      2    0.0%    0.0%  Function: ^Long.fromNumber /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/long.js:130:32
+      2    0.0%    0.0%  Function: ^Binary /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/binary.js:18:20
+      2    0.0%    0.0%  Function: ^<anonymous> node:_http_outgoing:558:44
+      2    0.0%    0.0%  Function: ^<anonymous> /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongodb/lib/sdam/topology.js:552:53
+      1    0.0%    0.0%  RegExp: ^text\/|^application\/(javascript|json)
+      1    0.0%    0.0%  RegExp: ^\/logout\/?$
+      1    0.0%    0.0%  RegExp: ^\/?$
+      1    0.0%    0.0%  RegExp: ^\$ref$|^\$id$|^\$db$
+      1    0.0%    0.0%  RegExp: ^[!#$%&'*+\-.^_`|~0-9A-Za-z]+$
+      1    0.0%    0.0%  RegExp: ^[!#$%&'*+.^_`|~0-9A-Za-z-]+$
+      1    0.0%    0.0%  RegExp: ^((?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])[.]){3}(?:[0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])$
+      1    0.0%    0.0%  RegExp: [^\u0021-\u007F]
+      1    0.0%    0.0%  RegExp: [A-Z]
+      1    0.0%    0.0%  LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+      1    0.0%    0.0%  LazyCompile: *write node:buffer:1050:40
+      1    0.0%    0.0%  LazyCompile: *updateServers /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:582:23
+      1    0.0%    0.0%  LazyCompile: *updateServers /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongodb/lib/sdam/topology.js:582:23
+      1    0.0%    0.0%  LazyCompile: *toInteger node:buffer:190:19
+      1    0.0%    0.0%  LazyCompile: *syncExports node:internal/bootstrap/loaders:287:14
+      1    0.0%    0.0%  LazyCompile: *slice node:buffer:593:12
+      1    0.0%    0.0%  LazyCompile: *slice node:buffer:1115:40
+      1    0.0%    0.0%  LazyCompile: *normalizeParseOptions /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/qs/lib/parse.js:189:59
+      1    0.0%    0.0%  LazyCompile: *isEmpty node:internal/fixed_queue:67:10
+      1    0.0%    0.0%  LazyCompile: *inspect node:internal/util/inspect:286:17
+      1    0.0%    0.0%  LazyCompile: *hrtime node:internal/process/per_thread:67:18
+      1    0.0%    0.0%  LazyCompile: *hasHooks node:internal/async_hooks:460:18
+      1    0.0%    0.0%  LazyCompile: *fastparse /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/parseurl/index.js:95:20
+      1    0.0%    0.0%  LazyCompile: *emitAfterScript node:internal/async_hooks:507:25
+      1    0.0%    0.0%  LazyCompile: *dirname node:path:1275:10
+      1    0.0%    0.0%  LazyCompile: *debug /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/node_modules/debug/src/debug.js:65:17
+      1    0.0%    0.0%  LazyCompile: *cleanup /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/ee-first/index.js:58:19
+      1    0.0%    0.0%  LazyCompile: *Writable.write node:internal/streams/writable:333:36
+      1    0.0%    0.0%  LazyCompile: *Timeout.refresh node:internal/timers:210:37
+      1    0.0%    0.0%  LazyCompile: *SendStream /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/send/index.js:96:21
+      1    0.0%    0.0%  LazyCompile: *Long.compare /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/long.js:291:39
+      1    0.0%    0.0%  LazyCompile: *Long.add /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/long.js:252:35
+      1    0.0%    0.0%  LazyCompile: *FastBuffer node:internal/buffer:958:14
+      1    0.0%    0.0%  LazyCompile: *EventEmitter.init node:events:194:29
+      1    0.0%    0.0%  LazyCompile: *C node:internal/deps/cjs-module-lexer/dist/lexer:1:1152
+      1    0.0%    0.0%  LazyCompile: *<anonymous> node:_http_outgoing:564:45
+      1    0.0%    0.0%  Function: ^writeHead /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/on-headers/index.js:28:29
+      1    0.0%    0.0%  Function: ^write node:buffer:1050:40
+      1    0.0%    0.0%  Function: ^write /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:488:15
+      1    0.0%    0.0%  Function: ^wrapmethods /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express-session/index.js:394:25
+      1    0.0%    0.0%  Function: ^utcDate node:internal/http:21:17
+      1    0.0%    0.0%  Function: ^updateServers /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:582:23
+      1    0.0%    0.0%  Function: ^updateChildren node:internal/modules/cjs/loader:165:24
+      1    0.0%    0.0%  Function: ^translatePeerCertificate node:_tls_common:124:34
+      1    0.0%    0.0%  Function: ^toString node:buffer:782:46
+      1    0.0%    0.0%  Function: ^stringify /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/response.js:1118:20
+      1    0.0%    0.0%  Function: ^status /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/response.js:66:29
+      1    0.0%    0.0%  Function: ^stat node:fs:1452:14
+      1    0.0%    0.0%  Function: ^setStreamTimeout node:internal/stream_base_commons:254:26
+      1    0.0%    0.0%  Function: ^setHasTickScheduled node:internal/process/task_queues:52:29
+      1    0.0%    0.0%  Function: ^set expires /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express-session/session/cookie.js:60:14
+      1    0.0%    0.0%  Function: ^set /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/application.js:352:23
+      1    0.0%    0.0%  Function: ^session /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express-session/index.js:179:26
+      1    0.0%    0.0%  Function: ^serverUpdateHandler /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology.js:379:24
+      1    0.0%    0.0%  Function: ^serveStatic /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/serve-static/index.js:72:31
+      1    0.0%    0.0%  Function: ^serializeString /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/parser/serializer.js:20:25
+      1    0.0%    0.0%  Function: ^serialize /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/bson.js:111:19
+      1    0.0%    0.0%  Function: ^send /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/send/index.js:83:15
+      1    0.0%    0.0%  Function: ^res.get /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/response.js:788:19
+      1    0.0%    0.0%  Function: ^removeListener node:events:557:28
+      1    0.0%    0.0%  Function: ^reduceToSingleString node:internal/util/inspect:1764:30
+      1    0.0%    0.0%  Function: ^realpathSync node:fs:2408:22
+      1    0.0%    0.0%  Function: ^readSync node:fs:684:18
+      1    0.0%    0.0%  Function: ^readFileSync node:fs:450:22
+      1    0.0%    0.0%  Function: ^read /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongodb/lib/utils.js:981:9
+      1    0.0%    0.0%  Function: ^randomFillSync node:internal/crypto/random:110:24
+      1    0.0%    0.0%  Function: ^qstring /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/content-type/index.js:200:18
+      1    0.0%    0.0%  Function: ^pushAsyncContext node:internal/async_hooks:529:26
+      1    0.0%    0.0%  Function: ^processTimers node:internal/timers:485:25
+      1    0.0%    0.0%  Function: ^processIncomingData /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/cmap/message_stream.js:79:29
+      1    0.0%    0.0%  Function: ^pipe /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/send/index.js:510:43
+      1    0.0%    0.0%  Function: ^parserOnIncoming node:_http_server:852:26
+      1    0.0%    0.0%  Function: ^parserOnHeadersComplete node:_http_common:77:33
+      1    0.0%    0.0%  Function: ^parse /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:577:10
+      1    0.0%    0.0%  Function: ^parse /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongodb/lib/cmap/commands.js:577:10
+      1    0.0%    0.0%  Function: ^originCallback /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/cors/lib/index.js:213:39
+      1    0.0%    0.0%  Function: ^ondata node:internal/streams/readable:752:18
+      1    0.0%    0.0%  Function: ^onWriteComplete node:internal/stream_base_commons:80:25
+      1    0.0%    0.0%  Function: ^onStatError /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/send/index.js:416:57
+      1    0.0%    0.0%  Function: ^onHeaders /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/on-headers/index.js:56:20
+      1    0.0%    0.0%  Function: ^onError node:_http_incoming:374:17
+      1    0.0%    0.0%  Function: ^onDestroy node:internal/streams/destroy:73:21
+      1    0.0%    0.0%  Function: ^now /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongodb/lib/utils.js:737:13
+      1    0.0%    0.0%  Function: ^nocompress /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/compression/index.js:134:25
+      1    0.0%    0.0%  Function: ^next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/send/index.js:732:17
+      1    0.0%    0.0%  Function: ^next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:114:16
+      1    0.0%    0.0%  Function: ^messageHandler /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1    0.0%    0.0%  Function: ^messageHandler /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongodb/lib/cmap/connection.js:421:35
+      1    0.0%    0.0%  Function: ^memoryUsage node:internal/process/per_thread:165:23
+      1    0.0%    0.0%  Function: ^logger /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/morgan/index.js:103:26
+      1    0.0%    0.0%  Function: ^join node:path:1166:7
+      1    0.0%    0.0%  Function: ^isEncoding node:buffer:529:40
+      1    0.0%    0.0%  Function: ^isAbsolute node:path:1156:13
+      1    0.0%    0.0%  Function: ^inspect node:internal/util/inspect:286:17
+      1    0.0%    0.0%  Function: ^insert node:internal/timers:350:16
+      1    0.0%    0.0%  Function: ^importModuleDynamicallyWrap node:internal/vm/module:435:37
+      1    0.0%    0.0%  Function: ^hrtime node:internal/process/per_thread:67:18
+      1    0.0%    0.0%  Function: ^header /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/response.js:754:29
+      1    0.0%    0.0%  Function: ^hasTrailingSlash /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/send/index.js:303:67
+      1    0.0%    0.0%  Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+      1    0.0%    0.0%  Function: ^handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:136:31
+      1    0.0%    0.0%  Function: ^handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/application.js:158:29
+      1    0.0%    0.0%  Function: ^getip /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/morgan/index.js:485:16
+      1    0.0%    0.0%  Function: ^getcookie /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express-session/index.js:529:19
+      1    0.0%    0.0%  Function: ^getTimerDuration node:internal/timers:383:26
+      1    0.0%    0.0%  Function: ^getReadPreference /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongodb/lib/cmap/wire_protocol/shared.js:8:27
+      1    0.0%    0.0%  Function: ^getOptions node:internal/fs/utils:314:20
+      1    0.0%    0.0%  Function: ^getObserverType node:internal/perf/observe:117:25
+      1    0.0%    0.0%  Function: ^getHeader node:_http_outgoing:590:57
+      1    0.0%    0.0%  Function: ^get node:internal/streams/readable:1268:8
+      1    0.0%    0.0%  Function: ^get node:internal/bootstrap/pre_execution:327:8
+      1    0.0%    0.0%  Function: ^get node:internal/bootstrap/pre_execution:315:8
+      1    0.0%    0.0%  Function: ^get ismaster /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:71:17
+      1    0.0%    0.0%  Function: ^get isReadable /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongodb/lib/sdam/server_description.js:95:19
+      1    0.0%    0.0%  Function: ^get /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/bson.js:18:74
+      1    0.0%    0.0%  Function: ^formatValue node:internal/util/inspect:726:21
+      1    0.0%    0.0%  Function: ^formatProperty node:internal/util/inspect:1672:24
+      1    0.0%    0.0%  Function: ^extname node:path:1385:10
+      1    0.0%    0.0%  Function: ^exports.USVString /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/webidl-conversions/lib/index.js:298:21
+      1    0.0%    0.0%  Function: ^etag /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/etag/index.js:70:15
+      1    0.0%    0.0%  Function: ^error /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/send/index.js:267:45
+      1    0.0%    0.0%  Function: ^equals /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/sdam/server_description.js:118:11
+      1    0.0%    0.0%  Function: ^end node:_http_outgoing:833:45
+      1    0.0%    0.0%  Function: ^end /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/compression/index.js:92:28
+      1    0.0%    0.0%  Function: ^encodeRealpathResult node:fs:2371:30
+      1    0.0%    0.0%  Function: ^emitBeforeScript node:internal/async_hooks:499:26
+      1    0.0%    0.0%  Function: ^emitAfterScript node:internal/async_hooks:507:25
+      1    0.0%    0.0%  Function: ^dispatch /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:98:45
+      1    0.0%    0.0%  Function: ^dirname node:path:1275:10
+      1    0.0%    0.0%  Function: ^destroyHooksExist node:internal/async_hooks:476:27
+      1    0.0%    0.0%  Function: ^deserialize /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/parser/deserializer.js:25:21
+      1    0.0%    0.0%  Function: ^debug /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/send/node_modules/debug/src/debug.js:65:17
+      1    0.0%    0.0%  Function: ^debug /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/node_modules/debug/src/debug.js:65:17
+      1    0.0%    0.0%  Function: ^createHash node:crypto:129:20
+      1    0.0%    0.0%  Function: ^connect node:_tls_wrap:1597:35
+      1    0.0%    0.0%  Function: ^configureOrigin /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/cors/lib/index.js:36:27
+      1    0.0%    0.0%  Function: ^concat node:buffer:535:32
+      1    0.0%    0.0%  Function: ^compression /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/compression/index.js:59:31
+      1    0.0%    0.0%  Function: ^command /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:161:12
+      1    0.0%    0.0%  Function: ^clearIncoming node:_http_server:749:23
+      1    0.0%    0.0%  Function: ^cleanup /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/ee-first/index.js:58:19
+      1    0.0%    0.0%  Function: ^checkServer /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/sdam/monitor.js:138:21
+      1    0.0%    0.0%  Function: ^checkHasPrimary /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology_description.js:329:25
+      1    0.0%    0.0%  Function: ^canBeRequiredByUsers node:internal/bootstrap/loaders:240:30
+      1    0.0%    0.0%  Function: ^authenticate /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/passport/lib/middleware/authenticate.js:94:31
+      1    0.0%    0.0%  Function: ^attachListener /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/on-finished/index.js:140:24
+      1    0.0%    0.0%  Function: ^assertSize node:internal/crypto/random:74:20
+      1    0.0%    0.0%  Function: ^app.<computed> /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/application.js:473:25
+      1    0.0%    0.0%  Function: ^afterWriteTick node:internal/streams/writable:482:24
+      1    0.0%    0.0%  Function: ^_unrefTimer node:net:417:52
+      1    0.0%    0.0%  Function: ^URL node:internal/url:620:14
+      1    0.0%    0.0%  Function: ^TopologyDescription /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/sdam/topology_description.js:28:16
+      1    0.0%    0.0%  Function: ^Timeout.refresh node:internal/timers:210:37
+      1    0.0%    0.0%  Function: ^Timeout node:internal/timers:167:17
+      1    0.0%    0.0%  Function: ^TLSSocket.getPeerCertificate node:_tls_wrap:984:50
+      1    0.0%    0.0%  Function: ^SendStream /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/send/index.js:96:21
+      1    0.0%    0.0%  Function: ^ObjectId.toString /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/objectid.js:155:44
+      1    0.0%    0.0%  Function: ^ObjectId.toHexString /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/objectid.js:102:47
+      1    0.0%    0.0%  Function: ^Module._resolveLookupPaths node:internal/modules/cjs/loader:667:38
+      1    0.0%    0.0%  Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      1    0.0%    0.0%  Function: ^Module._nodeModulePaths node:internal/modules/cjs/loader:629:37
+      1    0.0%    0.0%  Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      1    0.0%    0.0%  Function: ^Long.subtract /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/long.js:719:40
+      1    0.0%    0.0%  Function: ^Long.compare /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/long.js:291:39
+      1    0.0%    0.0%  Function: ^Long /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/long.js:58:18
+      1    0.0%    0.0%  Function: ^LazyTransform node:internal/streams/lazy_transform:20:23
+      1    0.0%    0.0%  Function: ^Hash node:internal/crypto/hash:58:14
+      1    0.0%    0.0%  Function: ^Duplex node:internal/streams/duplex:52:16
+      1    0.0%    0.0%  Function: ^Cookie /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express-session/session/cookie.js:25:46
+      1    0.0%    0.0%  Function: ^Binary.value /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/binary.js:130:39
+      1    0.0%    0.0%  Function: ^BinMsg /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:545:16
+      1    0.0%    0.0%  Function: ^BinMsg /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongodb/lib/cmap/commands.js:545:16
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/validators:235:42
+      1    0.0%    0.0%  Function: ^<anonymous> node:internal/tls/parse-cert-string:17:56
+      1    0.0%    0.0%  Function: ^<anonymous> node:buffer:348:36
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:58:62
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:52:38
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/operations/connect.js:61:28
+      1    0.0%    0.0%  Function: ^<anonymous> /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/request.js:467:36
+
+ [C++]:
+   ticks  total  nonlib   name
+   9993   55.4%   59.9%  t auto node::options_parser::OptionsParser<node::PerIsolateOptions>::Convert<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField, node::EnvironmentOptions>(std::__1::shared_ptr<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField>, node::EnvironmentOptions* (node::PerIsolateOptions::*)())::AdaptedField::LookupImpl(node::PerIsolateOptions*) const
+   2685   14.9%   16.1%  T _posix_spawn_file_actions_adddup2
+   1183    6.6%    7.1%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    436    2.4%    2.6%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+    278    1.5%    1.7%  T _getxattr
+    220    1.2%    1.3%  t node::fs::Stat(v8::FunctionCallbackInfo<v8::Value> const&)
+    145    0.8%    0.9%  T __kernelrpc_mach_port_get_refs
+    128    0.7%    0.8%  T node::native_module::NativeModuleEnv::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+    104    0.6%    0.6%  t node::fs::InternalModuleReadJSON(v8::FunctionCallbackInfo<v8::Value> const&)
+    101    0.6%    0.6%  T ___getrlimit
+     96    0.5%    0.6%  T _task_restartable_ranges_register
+     84    0.5%    0.5%  t node::fs::InternalModuleStat(v8::FunctionCallbackInfo<v8::Value> const&)
+     82    0.5%    0.5%  T _mach_port_allocate
+     80    0.4%    0.5%  t node::fs::Open(v8::FunctionCallbackInfo<v8::Value> const&)
+     42    0.2%    0.3%  T _task_restartable_ranges_synchronize
+     39    0.2%    0.2%  T _socket
+     31    0.2%    0.2%  t node::EnvGetter(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Value> const&)
+     20    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringWrite<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+     17    0.1%    0.1%  T node::HandleWrap::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+     15    0.1%    0.1%  T _vm_region_64
+     14    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)1>(v8::FunctionCallbackInfo<v8::Value> const&)
+     13    0.1%    0.1%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)5>(v8::FunctionCallbackInfo<v8::Value> const&)
+     13    0.1%    0.1%  T _mach_msg_destroy
+     12    0.1%    0.1%  t std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> > std::__1::__pad_and_output<char, std::__1::char_traits<char> >(std::__1::ostreambuf_iterator<char, std::__1::char_traits<char> >, char const*, char const*, char const*, std::__1::ios_base&, char)
+     11    0.1%    0.1%  t void std::__1::vector<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::allocator<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > > >::__emplace_back_slow_path<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > >(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&&)
+     11    0.1%    0.1%  t __pthread_mutex_check_init_slow
+     10    0.1%    0.1%  T node::loader::ModuleWrap::New(v8::FunctionCallbackInfo<v8::Value> const&)
+      9    0.0%    0.1%  t node::fs::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      9    0.0%    0.1%  T node::fs::Close(v8::FunctionCallbackInfo<v8::Value> const&)
+      8    0.0%    0.0%  t std::__1::basic_ostream<char, std::__1::char_traits<char> >& std::__1::__put_character_sequence<char, std::__1::char_traits<char> >(std::__1::basic_ostream<char, std::__1::char_traits<char> >&, char const*, unsigned long)
+      8    0.0%    0.0%  T node::fs::NewFSReqCallback(v8::FunctionCallbackInfo<v8::Value> const&)
+      8    0.0%    0.0%  T _proc_set_dirty
+      6    0.0%    0.0%  T node::Environment::RunAndClearNativeImmediates(bool)
+      6    0.0%    0.0%  T _task_name_for_pid
+      6    0.0%    0.0%  T _os_packet_get_expire_time
+      5    0.0%    0.0%  t node::EnvQuery(v8::Local<v8::Name>, v8::PropertyCallbackInfo<v8::Integer> const&)
+      5    0.0%    0.0%  t node::Buffer::(anonymous namespace)::ByteLengthUtf8(v8::FunctionCallbackInfo<v8::Value> const&)
+      5    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventBefore()
+      4    0.0%    0.0%  t node::fs::FStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.0%    0.0%  t node::cares_wrap::(anonymous namespace)::GetAddrInfo(v8::FunctionCallbackInfo<v8::Value> const&)
+      4    0.0%    0.0%  t node::AsyncHooks::push_async_context(double, double, v8::Local<v8::Object>)
+      4    0.0%    0.0%  T node::UVException(v8::Isolate*, int, char const*, char const*, char const*, char const*)
+      4    0.0%    0.0%  T node::InternalCallbackScope::Close()
+      4    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventAfter(node::AsyncWrap::ProviderType, double)
+      4    0.0%    0.0%  T _umask
+      3    0.0%    0.0%  t void node::Buffer::(anonymous namespace)::StringSlice<(node::encoding)2>(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<void*, void*>*> std::__1::__hash_table<void*, std::__1::hash<void*>, std::__1::equal_to<void*>, std::__1::allocator<void*> >::find<void*>(void* const&)
+      3    0.0%    0.0%  t node::TraceEventScope::TraceEventScope(char const*, char const*, void*)
+      3    0.0%    0.0%  t node::BaseObject::decrease_refcount()
+      3    0.0%    0.0%  T node::loader::ModuleWrap::Instantiate(v8::FunctionCallbackInfo<v8::Value> const&)
+      3    0.0%    0.0%  T node::AsyncWrap::MakeCallback(v8::Local<v8::Function>, int, v8::Local<v8::Value>*)
+      3    0.0%    0.0%  T _rename
+      3    0.0%    0.0%  T _pthread_setschedparam
+      3    0.0%    0.0%  T _pthread_atfork
+      3    0.0%    0.0%  T _pid_for_task
+      3    0.0%    0.0%  T _os_packet_get_group_end
+      3    0.0%    0.0%  T _mig_get_reply_port
+      2    0.0%    0.0%  t std::__1::deque<node::http2::NgHttp2StreamWrite, std::__1::allocator<node::http2::NgHttp2StreamWrite> >::__add_back_capacity()
+      2    0.0%    0.0%  t std::__1::__hash_iterator<std::__1::__hash_node<node::CleanupHookCallback, void*>*> std::__1::__hash_table<node::CleanupHookCallback, node::CleanupHookCallback::Hash, node::CleanupHookCallback::Equal, std::__1::allocator<node::CleanupHookCallback> >::find<node::CleanupHookCallback>(node::CleanupHookCallback const&)
+      2    0.0%    0.0%  t node::i18n::ToASCII(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t node::fs::OpenFileHandle(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  t node::Environment::RunAndClearNativeImmediates(bool)::$_7::operator()(node::CallbackQueue<void, node::Environment*>*) const
+      2    0.0%    0.0%  t node::BaseObject::~BaseObject()
+      2    0.0%    0.0%  t node::AsyncHooks::pop_async_context(double)
+      2    0.0%    0.0%  T node::loader::ModuleWrap::SetSyntheticExport(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T node::NodeArrayBufferAllocator::Allocate(unsigned long)
+      2    0.0%    0.0%  T node::InternalCallbackScope::InternalCallbackScope(node::Environment*, v8::Local<v8::Object>, node::async_context const&, int)
+      2    0.0%    0.0%  T node::Environment::RunWeakRefCleanup()
+      2    0.0%    0.0%  T node::Environment::RunTimers(uv_timer_s*)
+      2    0.0%    0.0%  T node::AsyncWrap::EmitTraceEventDestroy()
+      2    0.0%    0.0%  T _task_set_special_port
+      2    0.0%    0.0%  T ___rename
+      1    0.0%    0.0%  t void node::cares_wrap::(anonymous namespace)::Query<node::cares_wrap::QueryWrap<node::cares_wrap::SrvTraits> >(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t unsigned long std::__1::__hash_table<node::CleanupHookCallback, node::CleanupHookCallback::Hash, node::CleanupHookCallback::Equal, std::__1::allocator<node::CleanupHookCallback> >::__erase_unique<node::CleanupHookCallback>(node::CleanupHookCallback const&)
+      1    0.0%    0.0%  t std::__1::vector<v8::Global<v8::Context>, std::__1::allocator<v8::Global<v8::Context> > >::__append(unsigned long)
+      1    0.0%    0.0%  t std::__1::deque<unsigned long, std::__1::allocator<unsigned long> >::__add_back_capacity()
+      1    0.0%    0.0%  t std::__1::__shared_ptr_pointer<char*, std::__1::default_delete<char []>, std::__1::allocator<char> >::__on_zero_shared_weak()
+      1    0.0%    0.0%  t std::__1::__hash_table<std::__1::__hash_value_type<unsigned int, node::loader::ModuleWrap*>, std::__1::__unordered_map_hasher<unsigned int, std::__1::__hash_value_type<unsigned int, node::loader::ModuleWrap*>, std::__1::hash<unsigned int>, true>, std::__1::__unordered_map_equal<unsigned int, std::__1::__hash_value_type<unsigned int, node::loader::ModuleWrap*>, std::__1::equal_to<unsigned int>, true>, std::__1::allocator<std::__1::__hash_value_type<unsigned int, node::loader::ModuleWrap*> > >::__rehash(unsigned long)
+      1    0.0%    0.0%  t non-virtual thunk to v8::internal::PointersUpdatingVisitor::~PointersUpdatingVisitor()
+      1    0.0%    0.0%  t node::fs::ReadDir(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::fs::FillGlobalStatsArray(node::fs::BindingData*, bool, uv_stat_t const*, bool)
+      1    0.0%    0.0%  t node::ArrayBufferViewContents<char, 64ul>::Read(v8::Local<v8::ArrayBufferView>)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(char const*, unsigned long), &(node::(anonymous namespace)::Parser::on_url(char const*, unsigned long))>::Raw(llhttp__internal_s*, char const*, unsigned long)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::Proxy<int (node::(anonymous namespace)::Parser::*)(), &(node::(anonymous namespace)::Parser::on_message_begin())>::Raw(llhttp__internal_s*)
+      1    0.0%    0.0%  t node::(anonymous namespace)::Parser::OnStreamRead(long, uv_buf_t const&)
+      1    0.0%    0.0%  t icu_69::Normalizer2WithImpl::getQuickCheck(int) const
+      1    0.0%    0.0%  T node::loader::ModuleWrap::Link(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::fs::FSReqCallback::Reject(v8::Local<v8::Value>)
+      1    0.0%    0.0%  T node::fs::FSReqAfterScope::FSReqAfterScope(node::fs::FSReqBase*, uv_fs_s*)
+      1    0.0%    0.0%  T node::errors::TryCatchScope::~TryCatchScope()
+      1    0.0%    0.0%  T node::binding::GetInternalBinding(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::InternalCallbackScope::~InternalCallbackScope()
+      1    0.0%    0.0%  T node::InternalCallbackScope::InternalCallbackScope(node::AsyncWrap*, int)
+      1    0.0%    0.0%  T node::BaseObject::MakeWeak()::'lambda'(v8::WeakCallbackInfo<node::BaseObject> const&)::__invoke(v8::WeakCallbackInfo<node::BaseObject> const&)
+      1    0.0%    0.0%  T node::BaseObject::LazilyInitializedJSTemplateConstructor(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  T node::AsyncWrap::EmitDestroy(node::Environment*, double)
+      1    0.0%    0.0%  T node::AsyncWrap::EmitAfter(node::Environment*, double)
+      1    0.0%    0.0%  T _task_for_pid
+      1    0.0%    0.0%  T _semaphore_create
+      1    0.0%    0.0%  T _pthread_override_qos_class_start_np
+      1    0.0%    0.0%  T _pthread_cond_init
+      1    0.0%    0.0%  T _macx_swapon
+      1    0.0%    0.0%  T _mach_port_deallocate
+      1    0.0%    0.0%  T _mach_msg_server
+      1    0.0%    0.0%  T _cerror
+      1    0.0%    0.0%  T _audit_session_self
+      1    0.0%    0.0%  T __kernelrpc_mach_vm_map
+
+ [Summary]:
+   ticks  total  nonlib   name
+    567    3.1%    3.4%  JavaScript
+  16067   89.1%   96.2%  C++
+    787    4.4%    4.7%  GC
+   1337    7.4%          Shared libraries
+     60    0.3%          Unaccounted
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+  12870   99.6%   71.4%  t auto node::options_parser::OptionsParser<node::PerIsolateOptions>::Convert<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField, node::EnvironmentOptions>(std::__1::shared_ptr<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField>, node::EnvironmentOptions* (node::PerIsolateOptions::*)())::AdaptedField::LookupImpl(node::PerIsolateOptions*) const
+     15    0.1%    0.1%  T _vm_region_64
+     13    0.1%    0.1%  T _mach_msg_destroy
+     12    0.1%    0.1%  T _getxattr
+      5    0.0%    0.0%  T node::loader::ModuleWrap::Evaluate(v8::FunctionCallbackInfo<v8::Value> const&)
+      2    0.0%    0.0%  T _os_packet_get_expire_time
+      1    0.0%    0.0%  t node::fs::LStat(v8::FunctionCallbackInfo<v8::Value> const&)
+      1    0.0%    0.0%  t node::fs::FillGlobalStatsArray(node::fs::BindingData*, bool, uv_stat_t const*, bool)
+      1    0.0%    0.0%  t node::ArrayBufferViewContents<char, 64ul>::Read(v8::Local<v8::ArrayBufferView>)
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   9993   55.4%  t auto node::options_parser::OptionsParser<node::PerIsolateOptions>::Convert<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField, node::EnvironmentOptions>(std::__1::shared_ptr<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField>, node::EnvironmentOptions* (node::PerIsolateOptions::*)())::AdaptedField::LookupImpl(node::PerIsolateOptions*) const
+   6069   60.7%    t auto node::options_parser::OptionsParser<node::PerIsolateOptions>::Convert<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField, node::EnvironmentOptions>(std::__1::shared_ptr<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField>, node::EnvironmentOptions* (node::PerIsolateOptions::*)())::AdaptedField::LookupImpl(node::PerIsolateOptions*) const
+   1283   21.1%      t auto node::options_parser::OptionsParser<node::PerIsolateOptions>::Convert<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField, node::EnvironmentOptions>(std::__1::shared_ptr<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField>, node::EnvironmentOptions* (node::PerIsolateOptions::*)())::AdaptedField::LookupImpl(node::PerIsolateOptions*) const
+   1097   85.5%        Function: ^renderInfo file:///Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/src/controllers/info.controller.js:8:33
+    640   58.3%          LazyCompile: *handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+    640  100.0%            Function: ^next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:114:16
+    457   41.7%          Function: ^handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+    457  100.0%            Function: ^next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:114:16
+     21    1.6%        LazyCompile: *reduceToSingleString node:internal/util/inspect:1764:30
+     21  100.0%          LazyCompile: *formatRaw node:internal/util/inspect:796:19
+     18   85.7%            LazyCompile: *formatProperty node:internal/util/inspect:1672:24
+      2    9.5%            Function: ^formatValue node:internal/util/inspect:726:21
+      1    4.8%            LazyCompile: *inspect node:internal/util/inspect:286:17
+    938   15.5%      Function: ^writevGeneric node:internal/stream_base_commons:126:23
+    938  100.0%        Function: ^Socket._writeGeneric node:net:769:42
+    937   99.9%          Function: ^Socket._writev node:net:801:36
+    937  100.0%            Function: ^doWrite node:internal/streams/writable:398:17
+    300    4.9%      LazyCompile: ~inspectorWaitForDebugger node:inspector:146:34
+    300  100.0%        LazyCompile: ~<anonymous> /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/ms-vscode.js-debug/src/bootloader.bundle.js:2:84546
+    300  100.0%          LazyCompile: ~<anonymous> /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/ms-vscode.js-debug/src/bootloader.bundle.js:2:83871
+    300  100.0%            LazyCompile: ~7207 /Applications/Visual Studio Code.app/Contents/Resources/app/extensions/ms-vscode.js-debug/src/bootloader.bundle.js:2:82918
+    298    4.9%      Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+    259   86.9%        Function: ^writeGeneric node:internal/stream_base_commons:151:22
+    230   88.8%          Function: ^Socket._writeGeneric node:net:769:42
+    230  100.0%            Function: ^Socket._write node:net:806:35
+     29   11.2%          LazyCompile: *Writable.write node:internal/streams/writable:333:36
+     24   82.8%            Function: ^ondata node:internal/streams/readable:752:18
+      3   10.3%            Function: ^value node:internal/console/constructor:257:20
+      2    6.9%            Function: ^logRequest /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/morgan/index.js:116:25
+     30   10.1%        LazyCompile: *_write node:internal/streams/writable:283:16
+     30  100.0%          Function: ^Writable.write node:internal/streams/writable:333:36
+     16   53.3%            Function: ^value node:internal/console/constructor:257:20
+     14   46.7%            Function: ^logRequest /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/morgan/index.js:116:25
+      9    3.0%        LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+      9  100.0%          LazyCompile: *_write node:internal/streams/writable:283:16
+      9  100.0%            Function: ^Writable.write node:internal/streams/writable:333:36
+    183    3.0%      Function: ^memoryUsage node:internal/process/per_thread:165:23
+    183  100.0%        Function: ^renderInfo file:///Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/src/controllers/info.controller.js:8:33
+    107   58.5%          LazyCompile: *handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+    107  100.0%            Function: ^next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:114:16
+     76   41.5%          Function: ^handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+     76  100.0%            Function: ^next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:114:16
+    177    2.9%      Function: ^TLSSocket.getPeerCertificate node:_tls_wrap:984:50
+    153   86.4%        Function: ^onConnectSecure node:_tls_wrap:1516:25
+    153  100.0%          LazyCompile: *emit node:events:340:44
+    153  100.0%            Function: ^TLSSocket._finishInit node:_tls_wrap:918:43
+     24   13.6%        LazyCompile: ~onConnectSecure node:_tls_wrap:1516:25
+     23   95.8%          LazyCompile: *emit node:events:340:44
+     23  100.0%            Function: ^TLSSocket._finishInit node:_tls_wrap:918:43
+      1    4.2%          Function: ^emit node:events:340:44
+      1  100.0%            Function: ^TLSSocket._finishInit node:_tls_wrap:918:43
+    100    1.6%      Function: ^Hash node:internal/crypto/hash:58:14
+    100  100.0%        Function: ^createHash node:crypto:129:20
+     63   63.0%          Function: ^hash /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express-session/index.js:596:14
+     45   71.4%            Function: ^isModified /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express-session/index.js:425:24
+     18   28.6%            Function: ^generate /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express-session/index.js:363:22
+     37   37.0%          Function: ^entitytag /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/etag/index.js:39:20
+     37  100.0%            Function: ^etag /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/etag/index.js:70:15
+     92    1.5%      Function: ^compression /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/compression/index.js:59:31
+     53   57.6%        LazyCompile: *handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+     53  100.0%          Function: ^next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:114:16
+     53  100.0%            Function: ^dispatch /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:98:45
+     39   42.4%        Function: ^handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+     39  100.0%          Function: ^next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:114:16
+     39  100.0%            Function: ^dispatch /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:98:45
+     89    1.5%      Function: ^methodProxy node:_tls_wrap:552:30
+     60   67.4%        Function: ^internalConnect node:net:875:25
+     60  100.0%          Function: ^defaultTriggerAsyncIdScope node:internal/async_hooks:445:36
+     60  100.0%            Function: ^emitLookup node:net:1052:46
+     18   20.2%        LazyCompile: ~internalConnect node:net:875:25
+     18  100.0%          Function: ^defaultTriggerAsyncIdScope node:internal/async_hooks:445:36
+     13   72.2%            LazyCompile: ~emitLookup node:net:1052:46
+      5   27.8%            Function: ^emitLookup node:net:1052:46
+     11   12.4%        Function: ^Socket._getpeername node:net:707:41
+     11  100.0%          Function: ^remoteAddress node:net:730:52
+      6   54.5%            Function: ^streamIdentifier /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongodb/lib/cmap/connection.js:482:26
+      2   18.2%            Function: ^streamIdentifier /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:482:26
+      1    9.1%            t auto node::options_parser::OptionsParser<node::PerIsolateOptions>::Convert<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField, node::EnvironmentOptions>(std::__1::shared_ptr<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField>, node::EnvironmentOptions* (node::PerIsolateOptions::*)())::AdaptedField::LookupImpl(node::PerIsolateOptions*) const
+      1    9.1%            LazyCompile: ~streamIdentifier /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection.js:482:26
+      1    9.1%            LazyCompile: ~streamIdentifier /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongodb/lib/cmap/connection.js:482:26
+     87    1.4%      LazyCompile: *next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:176:16
+     34   39.1%        LazyCompile: *handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:136:31
+     34  100.0%          Function: ^router /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:46:18
+     34  100.0%            LazyCompile: *next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:176:16
+     26   29.9%        Function: ^handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:136:31
+     25   96.2%          Function: ^router /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:46:18
+     25  100.0%            LazyCompile: *next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:176:16
+      1    3.8%          Function: ^handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/application.js:158:29
+      1  100.0%            Function: ^app /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/express.js:38:21
+      7    8.0%        Function: ^session /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express-session/index.js:179:26
+      7  100.0%          LazyCompile: *next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:176:16
+      7  100.0%            Function: ^logger /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/morgan/index.js:103:26
+      5    5.7%        Function: ^initialize /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/passport/lib/middleware/initialize.js:51:29
+      5  100.0%          LazyCompile: *next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:176:16
+      5  100.0%            Function: ^session /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express-session/index.js:179:26
+      5    5.7%        Function: ^error /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/serve-static/index.js:115:39
+      4   80.0%          LazyCompile: *emit node:events:340:44
+      4  100.0%            Function: ^error /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/send/index.js:267:45
+      1   20.0%          Function: ^emit node:events:340:44
+      1  100.0%            Function: ^error /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/send/index.js:267:45
+      4    4.6%        Function: ^logger /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/morgan/index.js:103:26
+      4  100.0%          LazyCompile: *next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:176:16
+      4  100.0%            Function: ^urlencodedParser /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/body-parser/lib/types/urlencoded.js:79:36
+      4    4.6%        Function: ^jsonParser /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/body-parser/lib/types/json.js:98:30
+      4  100.0%          LazyCompile: *next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:176:16
+      4  100.0%            Function: ^<anonymous> file:///Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/src/app.js:24:9
+      1    1.1%        Function: ^strategy.pass /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/passport/lib/middleware/authenticate.js:336:31
+      1  100.0%          Function: ^SessionStrategy.authenticate /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/passport/lib/strategies/session.js:45:50
+      1  100.0%            Function: ^attempt /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/passport/lib/middleware/authenticate.js:171:22
+      1    1.1%        Function: ^query /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/middleware/query.js:39:24
+      1  100.0%          LazyCompile: *next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:176:16
+      1  100.0%            LazyCompile: *handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:136:31
+     80    1.3%      Function: ^renderInfo file:///Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/src/controllers/info.controller.js:8:33
+     51   63.7%        LazyCompile: *handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+     51  100.0%          Function: ^next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:114:16
+     51  100.0%            Function: ^compression /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/compression/index.js:59:31
+     29   36.3%        Function: ^handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+     29  100.0%          Function: ^next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:114:16
+     29  100.0%            Function: ^compression /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/compression/index.js:59:31
+     75    1.2%      Function: ^initialize /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/passport/lib/middleware/initialize.js:51:29
+     70   93.3%        LazyCompile: *next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:176:16
+     70  100.0%          Function: ^session /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express-session/index.js:179:26
+     70  100.0%            LazyCompile: *next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:176:16
+      4    5.3%        LazyCompile: *handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+      4  100.0%          Function: ^trim_prefix /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:288:23
+      4  100.0%            Function: ^<anonymous> /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:275:64
+      1    1.3%        Function: ^handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+      1  100.0%          Function: ^trim_prefix /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:288:23
+      1  100.0%            Function: ^<anonymous> /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:275:64
+     68    1.1%      LazyCompile: *deserializeObject /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/parser/deserializer.js:54:27
+     39   57.4%        LazyCompile: *deserializeObject /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/parser/deserializer.js:54:27
+     28   71.8%          Function: ^deserialize /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/parser/deserializer.js:25:21
+     28  100.0%            Function: ^deserialize /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/bson.js:162:21
+     11   28.2%          LazyCompile: *deserializeObject /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/parser/deserializer.js:54:27
+     11  100.0%            Function: ^deserialize /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/parser/deserializer.js:25:21
+     29   42.6%        Function: ^deserialize /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/parser/deserializer.js:25:21
+     29  100.0%          Function: ^deserialize /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/bson/lib/bson.js:162:21
+     14   48.3%            Function: ^parse /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongodb/lib/cmap/commands.js:577:10
+     10   34.5%            Function: ^parse /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:577:10
+      4   13.8%            Function: ^parse /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongodb/lib/cmap/commands.js:384:10
+      1    3.4%            Function: ^parse /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/cmap/commands.js:384:10
+     65    1.1%      Function: ^TLSSocket._start node:_tls_wrap:947:38
+     65  100.0%        Function: ^onceWrapper node:events:504:21
+     63   96.9%          LazyCompile: *emit node:events:340:44
+     55   87.3%            Function: ^afterConnect node:net:1119:22
+      8   12.7%            LazyCompile: ~afterConnect node:net:1119:22
+      2    3.1%          Function: ^emit node:events:340:44
+      2  100.0%            LazyCompile: ~afterConnect node:net:1119:22
+
+   2685   14.9%  T _posix_spawn_file_actions_adddup2
+
+   1183    6.6%  T node::contextify::ContextifyContext::CompileFunction(v8::FunctionCallbackInfo<v8::Value> const&)
+   1183  100.0%    t auto node::options_parser::OptionsParser<node::PerIsolateOptions>::Convert<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField, node::EnvironmentOptions>(std::__1::shared_ptr<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField>, node::EnvironmentOptions* (node::PerIsolateOptions::*)())::AdaptedField::LookupImpl(node::PerIsolateOptions*) const
+   1129   95.4%      Function: ^compileFunction node:vm:308:25
+   1104   97.8%        Function: ^wrapSafe node:internal/modules/cjs/loader:1017:18
+   1063   96.3%          Function: ^Module._compile node:internal/modules/cjs/loader:1055:37
+    994   93.5%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     69    6.5%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     41    3.7%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1055:37
+     41  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     25    2.2%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+     25  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1055:37
+     25  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     54    4.6%      LazyCompile: ~compileFunction node:vm:308:25
+     54  100.0%        LazyCompile: ~wrapSafe node:internal/modules/cjs/loader:1017:18
+     54  100.0%          LazyCompile: ~Module._compile node:internal/modules/cjs/loader:1055:37
+     54  100.0%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+
+    704    3.9%  /usr/lib/system/libsystem_malloc.dylib
+    594   84.4%    t auto node::options_parser::OptionsParser<node::PerIsolateOptions>::Convert<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField, node::EnvironmentOptions>(std::__1::shared_ptr<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField>, node::EnvironmentOptions* (node::PerIsolateOptions::*)())::AdaptedField::LookupImpl(node::PerIsolateOptions*) const
+    512   86.2%      t auto node::options_parser::OptionsParser<node::PerIsolateOptions>::Convert<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField, node::EnvironmentOptions>(std::__1::shared_ptr<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField>, node::EnvironmentOptions* (node::PerIsolateOptions::*)())::AdaptedField::LookupImpl(node::PerIsolateOptions*) const
+    499   97.5%        Function: ^renderInfo file:///Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/src/controllers/info.controller.js:8:33
+    326   65.3%          LazyCompile: *handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+    326  100.0%            Function: ^next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:114:16
+    173   34.7%          Function: ^handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+    173  100.0%            Function: ^next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:114:16
+      9    1.5%      Function: ^recordStartTime /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/morgan/index.js:527:26
+      6   66.7%        Function: ^writeHead /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/on-headers/index.js:28:29
+      6  100.0%          Function: ^writeHead /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/on-headers/index.js:28:29
+      6  100.0%            Function: ^writeHead /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/on-headers/index.js:28:29
+      2   22.2%        Function: ^logger /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/morgan/index.js:103:26
+      2  100.0%          LazyCompile: *next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/index.js:176:16
+      2  100.0%            Function: ^urlencodedParser /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/body-parser/lib/types/urlencoded.js:79:36
+      1   11.1%        LazyCompile: *writeHead /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/on-headers/index.js:28:29
+      1  100.0%          LazyCompile: *writeHead /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/on-headers/index.js:28:29
+      1  100.0%            LazyCompile: *writeHead /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/on-headers/index.js:28:29
+      8    1.3%      Function: ^stringify /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/response.js:1118:20
+      8  100.0%        Function: ^json /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/response.js:239:25
+      8  100.0%          Function: ^renderInfo file:///Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/src/controllers/info.controller.js:8:33
+      5   62.5%            LazyCompile: *handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+      3   37.5%            Function: ^handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+      7    1.2%      Function: ^compression /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/compression/index.js:59:31
+      4   57.1%        LazyCompile: *handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+      4  100.0%          Function: ^next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:114:16
+      4  100.0%            Function: ^dispatch /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:98:45
+      3   42.9%        Function: ^handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+      3  100.0%          Function: ^next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:114:16
+      3  100.0%            Function: ^dispatch /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:98:45
+
+    436    2.4%  t node::fs::Read(v8::FunctionCallbackInfo<v8::Value> const&)
+    436  100.0%    t auto node::options_parser::OptionsParser<node::PerIsolateOptions>::Convert<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField, node::EnvironmentOptions>(std::__1::shared_ptr<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField>, node::EnvironmentOptions* (node::PerIsolateOptions::*)())::AdaptedField::LookupImpl(node::PerIsolateOptions*) const
+    426   97.7%      Function: ^readSync node:fs:684:18
+    426  100.0%        Function: ^tryReadSync node:fs:429:21
+    426  100.0%          Function: ^readFileSync node:fs:450:22
+    382   89.7%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1110:37
+     38    8.9%            LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1110:37
+      8    1.8%      LazyCompile: ~readSync node:fs:684:18
+      8  100.0%        LazyCompile: ~tryReadSync node:fs:429:21
+      8  100.0%          LazyCompile: ~readFileSync node:fs:450:22
+      8  100.0%            LazyCompile: ~cjsPreparseModuleExports node:internal/modules/esm/translators:212:34
+
+    278    1.5%  T _getxattr
+    265   95.3%    t auto node::options_parser::OptionsParser<node::PerIsolateOptions>::Convert<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField, node::EnvironmentOptions>(std::__1::shared_ptr<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField>, node::EnvironmentOptions* (node::PerIsolateOptions::*)())::AdaptedField::LookupImpl(node::PerIsolateOptions*) const
+    263   99.2%      t auto node::options_parser::OptionsParser<node::PerIsolateOptions>::Convert<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField, node::EnvironmentOptions>(std::__1::shared_ptr<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField>, node::EnvironmentOptions* (node::PerIsolateOptions::*)())::AdaptedField::LookupImpl(node::PerIsolateOptions*) const
+    262   99.6%        Function: ^renderInfo file:///Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/src/controllers/info.controller.js:8:33
+    152   58.0%          LazyCompile: *handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+    152  100.0%            Function: ^next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:114:16
+    110   42.0%          Function: ^handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+    110  100.0%            Function: ^next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:114:16
+     12    4.3%    LazyCompile: *writeOrBuffer node:internal/streams/writable:365:23
+     12  100.0%      Function: ^_write node:internal/streams/writable:283:16
+     12  100.0%        Function: ^Writable.write node:internal/streams/writable:333:36
+      7   58.3%          Function: ^value node:internal/console/constructor:257:20
+      7  100.0%            Function: ^log node:internal/console/constructor:358:6
+      5   41.7%          Function: ^logRequest /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/morgan/index.js:116:25
+      5  100.0%            Function: ^listener /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/on-finished/index.js:161:20
+
+    220    1.2%  t node::fs::Stat(v8::FunctionCallbackInfo<v8::Value> const&)
+    220  100.0%    t auto node::options_parser::OptionsParser<node::PerIsolateOptions>::Convert<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField, node::EnvironmentOptions>(std::__1::shared_ptr<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField>, node::EnvironmentOptions* (node::PerIsolateOptions::*)())::AdaptedField::LookupImpl(node::PerIsolateOptions*) const
+    213   96.8%      Function: ^stat node:fs:1452:14
+    213  100.0%        Function: ^sendFile /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/send/index.js:716:51
+    213  100.0%          Function: ^pipe /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/send/index.js:510:43
+    213  100.0%            Function: ^serveStatic /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/serve-static/index.js:72:31
+      6    2.7%      Function: ^statSync node:fs:1528:18
+      4   66.7%        Function: ^tryStatSync node:internal/modules/esm/resolve:183:3
+      2   50.0%          Function: ^packageResolve node:internal/modules/esm/resolve:838:24
+      2  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:917:23
+      1   25.0%          LazyCompile: ~packageResolve node:internal/modules/esm/resolve:838:24
+      1  100.0%            LazyCompile: ~moduleResolve node:internal/modules/esm/resolve:917:23
+      1   25.0%          LazyCompile: ~finalizeResolution node:internal/modules/esm/resolve:389:28
+      1  100.0%            Function: ^moduleResolve node:internal/modules/esm/resolve:917:23
+      1   16.7%        LazyCompile: ~fileExists node:internal/modules/esm/resolve:282:20
+      1  100.0%          LazyCompile: ~legacyMainResolve node:internal/modules/esm/resolve:298:27
+      1  100.0%            Function: ^packageResolve node:internal/modules/esm/resolve:838:24
+      1   16.7%        Function: ^fileExists node:internal/modules/esm/resolve:282:20
+      1  100.0%          LazyCompile: ~legacyMainResolve node:internal/modules/esm/resolve:298:27
+      1  100.0%            Function: ^packageResolve node:internal/modules/esm/resolve:838:24
+
+    190    1.1%  /usr/lib/libc++.1.dylib
+    186   97.9%    t auto node::options_parser::OptionsParser<node::PerIsolateOptions>::Convert<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField, node::EnvironmentOptions>(std::__1::shared_ptr<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField>, node::EnvironmentOptions* (node::PerIsolateOptions::*)())::AdaptedField::LookupImpl(node::PerIsolateOptions*) const
+    154   82.8%      t auto node::options_parser::OptionsParser<node::PerIsolateOptions>::Convert<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField, node::EnvironmentOptions>(std::__1::shared_ptr<node::options_parser::OptionsParser<node::EnvironmentOptions>::BaseOptionField>, node::EnvironmentOptions* (node::PerIsolateOptions::*)())::AdaptedField::LookupImpl(node::PerIsolateOptions*) const
+    149   96.8%        Function: ^renderInfo file:///Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/src/controllers/info.controller.js:8:33
+     91   61.1%          LazyCompile: *handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+     91  100.0%            Function: ^next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:114:16
+     58   38.9%          Function: ^handle /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/layer.js:86:49
+     58  100.0%            Function: ^next /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/express/lib/router/route.js:114:16
+      2    1.1%      LazyCompile: ~<anonymous> /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/lib/connection.js:860:45
+      2  100.0%        LazyCompile: *emit node:events:340:44
+      2  100.0%          Function: ^<anonymous> /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/operations/connect.js:61:28
+      2  100.0%            LazyCompile: *emit node:events:340:44
+      2    1.1%      LazyCompile: *emit node:events:340:44
+      1   50.0%        LazyCompile: ~clear /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/cmap/connection_pool.js:170:10
+      1  100.0%          LazyCompile: ~<anonymous> /Users/ayelen/Documents/Coder/Back-End/entregas/entrega-15-rendimiento/node_modules/mongoose/node_modules/mongodb/lib/sdam/server.js:54:50
+      1  100.0%            LazyCompile: *emit node:events:340:44
+      1   50.0%        Function: ^TLSSocket._finishInit node:_tls_wrap:918:43
+      1  100.0%          Function: ^ssl.onhandshakedone node:_tls_wrap:723:27
+
