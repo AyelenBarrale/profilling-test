@@ -1,8 +1,10 @@
 #prueba sin compression
+
 ![sin-1](https://user-images.githubusercontent.com/79757893/141349177-55df831f-eba9-4f1d-a282-82b0ec5321f9.png)
 ![sin-2](https://user-images.githubusercontent.com/79757893/141349185-0973a480-cc76-4c47-bc21-b9b581b1f543.png)
 
 #prueba con compression
+
 ![con-1](https://user-images.githubusercontent.com/79757893/141349193-2bba093c-07ef-4796-91b4-4cea35c6f147.png)
 ![con-2](https://user-images.githubusercontent.com/79757893/141349212-1ec031a9-7fe8-43d5-b97a-5b1c01c3a871.png)
 
